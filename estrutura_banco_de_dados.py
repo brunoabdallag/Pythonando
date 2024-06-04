@@ -2,13 +2,14 @@
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from urllib.parse import quote
 
 # Criar um API Flask
 app = Flask(__name__) # Receberá o nome do arquivo que está sendo utilizado naquele momento "estrutura_banco_de_dados"
 
 # Criar uma instância de SQLAlchemy
 app.config['SECRET_KEY'] = 'BAG123!@#' # Chave para autenticação
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blog.db' # /// para indicar que é local
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres.npzzkjqczssuxziazjde:' + quote("nVPMt1zMdEml^mY#@Z*c") + '@aws-0-us-west-1.pooler.supabase.com:6543/postgres' # /// para indicar que é local
 # Pesquisar banco de dados online, utilize: connection string oracle / ou sql server / etc...
 
 # Criar instância

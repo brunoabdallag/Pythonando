@@ -24,6 +24,8 @@ def token_obrigatorio(f):
         return f(autor, *args, **kwargs)
     return decorated
 
+# teste
+
 # Login
 @app.route('/login')
 def login():

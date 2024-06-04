@@ -13,6 +13,7 @@ Nesse projeto, aprendemos a realizar a criação de APIs através do Python, uti
 #### APIs
 
 * Objetivo da API: Iremos montar uma API de blog, onde eu poderei consultar, editar, criar e excluir postagens em um blog utilizando a API.
+* Banco de dados PostgreSQL  em nuvem através do superbase -  link: https://supabase.com/
 * URL BASE: Uso local, sendo - http://localhost:5000
 * ENDPOINTS: > /postagens | > /autores
 * VERBOS HTTP: 
